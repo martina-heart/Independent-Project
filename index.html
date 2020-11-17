@@ -1,103 +1,137 @@
 <!DOCTYPE html>
-<html class="no-js" lang="">
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
-    <meta name="description" content="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1 " />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Queen</title>
 
-    <meta property="og:title" content="" />
-    <meta property="og:type" content="" />
-    <meta property="og:url" content="" />
-    <meta property="og:image" content="" />
-
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="apple-touch-icon" href="icon.png" />
-    <!-- Place favicon.ico in the root directory -->
-
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
-
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/work.css" />
-    <meta name="theme-color" content="#fafafa" />
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+    <link
+      rel="stylesheet"
+      href="https://www.w3schools.com/lib/w3-theme-black.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Sofia"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/work.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
   </head>
-
   <body>
-    <!-- Add your site or application content here -->
     <header>
-      <div class="container-fluid">
-        <div class="row">
-          <img src="img/PB063.jpg" id="logo" class="col-3" />
+      <!-- Navbar -->
+      <div class="w3-top">
+        <div class="w3-bar w3-theme-d2 w3-left-align">
+          <a
+            class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2"
+            href="javascript:void(0);"
+            onclick="openNav()"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <a
+            href="#"
+            class="w3-bar-item w3-button"
+            style="color: rgb(238, 85, 85)"
+            ><i class="fa fa-home w3-margin-right"></i>Home</a
+          >
 
-          <img src="img/queen name.jpg" class="col-6" />
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">
+              About Us <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+              <a href="#" class="w3-bar-item w3-button">History</a>
+              <a href="#" class="w3-bar-item w3-button">Discography</a>
+            </div>
+          </div>
 
-          <img src="img/PB063.jpg" id="logo" class="col-3" />
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">
+              The Band <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+              <a href="#" class="w3-bar-item w3-button">Freddie Mercury</a>
+              <a href="#" class="w3-bar-item w3-button">Brian May</a>
+              <a href="#" class="w3-bar-item w3-button">Roger Taylor</a>
+              <a href="#" class="w3-bar-item w3-button">John Deacon</a>
+            </div>
+          </div>
+          <div class="w3-dropdown-hover w3-hide-small">
+            <button class="w3-button" title="Notifications">
+              Music <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+              <a href="#" class="w3-bar-item w3-button">Live Music</a>
+              <a href="#" class="w3-bar-item w3-button">Compilations</a>
+              <a href="#" class="w3-bar-item w3-button">Concerts</a>
+            </div>
+          </div>
+          <a
+            href="#"
+            class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-"
+            title="Search"
+            ><i class="fa fa-search"></i
+          ></a>
+        </div>
+
+        <!-- Navbar on small screens -->
+        <div
+          id="navDemo"
+          class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium"
+        >
+          <a href="#team" class="w3-bar-item w3-button">Team</a>
+          <a href="#work" class="w3-bar-item w3-button">Work</a>
+          <a href="#pricing" class="w3-bar-item w3-button">Price</a>
+          <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+          <a href="#" class="w3-bar-item w3-button">Search</a>
         </div>
       </div>
-      <div class="navbar">
-        <a href="#">Home</a>
-        <div class="subnav">
-          <button class="subnavbtn">
-            About Us<i class="fa fa-caret-down"></i>
-          </button>
 
-          <div class="dropdown-content">
-            <a href="#">History</a>
-            <a href="#">Discography</a>
-          </div>
-        </div>
-        <div class="subnav">
-          <button class="subnavbtn">
-            The Band<i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Freddi Mercury</a>
-            <a href="#">Brian May</a>
-            <a href="#">Roger Taylor</a>
-            <a href="#">John Deacon</a>
-          </div>
-        </div>
+      <div class="flex-container">
+        <div class="row">
+          <img
+            src="https://i.pinimg.com/originals/e1/7b/ef/e17befde19dcb4c4890e01fcc19400d7.jpg"
+            class="col-3"
+          />
 
-        <div class="subnav">
-          <button class="subnavbtn">
-            Music<i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="#">Live Music</a>
-            <a href="#">Compilations</a>
-            <a href="#">Concerts</a>
-          </div>
+          <img src="img/queen name.jpg" class="col-6" id="name-queen" />
+
+          <img
+            src="https://i.pinimg.com/originals/e1/7b/ef/e17befde19dcb4c4890e01fcc19400d7.jpg"
+            class="col-3"
+          />
         </div>
       </div>
     </header>
+
     <main>
+      <!--Slideshow-->
       <div class="slideshow-container">
         <div class="mySlides fade">
-          <div class="numbertext">1 / 4</div>
           <img src="./img/Freddie-Mercury.jpg" style="width: 100%" />
           <div class="text">Queen - Rolling Show</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">2 / 4</div>
           <img src="./img/4_Queen hd.jpg" style="width: 100%" />
           <div class="text">In 1981, Queen—at their near peak</div>
         </div>
 
         <div class="mySlides fade">
-          <div class="numbertext">3 / 4</div>
           <img src="./img/queen 1 hd.jpg" style="width: 100%" />
           <div class="text">
             A Kind Of Magic: The Unstoppable Power Of Queen In The 80s
           </div>
         </div>
         <div class="mySlides fade">
-          <div class="numbertext">4 / 4</div>
           <img src="./img/Bohemian-Rhapsody.jpg" style="width: 100%" />
         </div>
       </div>
@@ -110,6 +144,7 @@
         <span class="dot"></span>
       </div>
 
+      <!--Social -->
       <div class="icon-bar">
         <a href="https://www.facebook.com/Queen/" class="facebook"
           ><i class="fa fa-facebook"></i
@@ -129,25 +164,85 @@
           ><i class="fa fa-youtube"></i
         ></a>
       </div>
+      <br />
+      <!-- <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/kfreU67zaHU"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe> -->
+      <span>
+        <h3 id="wiki">
+          Queen are a British rock band formed in London in 1970. Their classic
+          line-up was Freddie Mercury (lead vocals, piano), Brian May (guitar,
+          vocals), Roger Taylor (drums, vocals) and John Deacon (bass). Their
+          earliest works were influenced by progressive rock, hard rock and
+          heavy metal, but the band gradually ventured into more conventional
+          and radio-friendly works by incorporating further styles, such as
+          arena rock and pop rock.
+        </h3>
+      </span>
     </main>
-    <footer></footer>
+    <footer>
+      <div>
+      <h2>Popup Form</h2>
+      <p>
+        Click on the button at the bottom of this page to open the login form.
+      </p>
+      <p>
+        Note that the button and the form is fixed - they will always be
+        positioned to the bottom of the browser window.
+      </p>
 
-    <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-    <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/work.js"></script>
-    <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+      <button class="open-button" onclick="openForm()">Open Form</button>
+
+      <div class="form-popup" id="myForm">
+        <form action="/action_page.php" class="form-container">
+          <h1>Login</h1>
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" placeholder="Enter Email" name="email" required />
+
+          <label for="psw"><b>Password</b></label>
+          <input
+            type="password"
+            placeholder="Enter Password"
+            name="psw"
+            required
+          />
+
+          <button type="submit" class="btn">Login</button>
+          <button type="button" class="btn cancel" onclick="closeForm()">
+            Close
+          </button>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/work.js"></script>
     <script>
-      window.ga = function () {
-        ga.q.push(arguments);
-      };
-      ga.q = [];
-      ga.l = +new Date();
-      ga("create", "UA-XXXXX-Y", "auto");
-      ga("set", "anonymizeIp", true);
-      ga("set", "transport", "beacon");
-      ga("send", "pageview");
+      function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+        document.getElementById("main").style.marginLeft = "250px";
+        document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+      }
+
+      function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+        document.getElementById("main").style.marginLeft = "0";
+        document.body.style.backgroundColor = "white";
+      }
+
+      /** Log in Form */
+
+      function openForm() {
+        document.getElementById("myForm").style.display = "block";
+      }
+
+      function closeForm() {
+        document.getElementById("myForm").style.display = "none";
+      }
     </script>
-    <script src="https://www.google-analytics.com/analytics.js" async></script>
   </body>
 </html>
